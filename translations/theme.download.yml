@@ -12,3 +12,7 @@ messages:
     select-release: 'Please select your favorite release'
     outside-drupal: 'Drupal root can''t be determined. Use --root to set the destination, current folder will be used instead of.'
     error-creating-folder: 'Error creating folder "%s", please check your permissions'
+examples:
+    -
+        description: 'Download theme specifying name and version'
+        execution: "drupal theme:download  Alina 7.x-1.2\n"
