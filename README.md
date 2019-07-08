@@ -1,5 +1,5 @@
-# drupal-console-fa
-DrupalConsole Farsi Language / به زبان فارسی
+# drupal-console-fa-ir
+DrupalConsole Farsi Iranin Language / به زبان فارسی
 
 # نسخه به زبان فارسی
 
