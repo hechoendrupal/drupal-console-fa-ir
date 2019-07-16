@@ -1,7 +1,6 @@
 description: 'Export a single configuration or a list of configurations as yml file(s).'
-arguments:
-    name: 'Configuration name.'
 options:
+    name: 'Configuration name.'
     include-dependencies: 'Export dependencies of the configuration as well.'
     simple-configuration: 'Simple configuration'
     optional: 'Export config as an optional YAML configuration in your module'
@@ -19,3 +18,10 @@ messages:
     invalid-config-type: 'Invalid config type, please select one of the list'
     invalid-config-name: 'Invalid config name, please select one of the list'
     config-exported: 'Configuration(s) exported sucessfully'
+examples:
+    -
+        description: 'Provide config settings name to be exported.'
+        execution: "drupal config:export:single \\\n  --name=config.settings.name"
+    -
+        description: 'Export with uuid and config hashes removed.'
+        execution: "drupal config:export:single \\\n  --name=config.settings.name \\\n  --remove-uuid \\\n  --remove-config-hash\n"
