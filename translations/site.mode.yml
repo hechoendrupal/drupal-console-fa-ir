@@ -10,9 +10,16 @@ messages:
     updated: 'Override Value'
     invalid-env: 'Invalid environment'
     new-services-settings: 'New services settings'
-    service: 'Service'
-    service-parameter: 'Parameter'
-    service-value: 'Value'
+    service: Service
+    service-parameter: Parameter
+    service-value: Value
     error-copying-file: 'Error copying file'
     error-writing-file: 'Error copying file'
     services-file-overwritten: 'Services files "%s" was overwritten'
+examples:
+    -
+        description: 'Switch system to prod'
+        execution: 'drupal site:mode  prod'
+    -
+        description: 'Switch system to dev'
+        execution: "drupal site:mode  dev\n"

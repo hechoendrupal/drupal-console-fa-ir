@@ -22,10 +22,13 @@ questions:
         confirm: 'Do you want to load services from the container'
         message: "\nType the service name or use keyup or keydown.\nThis is optional, press <info>enter</info> to <info>continue</info>\n"
         name: 'Enter your service'
+    roles:
+        message: "\nType the role name or use keyup or keydown.\nThis is optional, press <info>enter</info> to <info>continue</info>\n"
+        name: 'Enter your role'
     inputs:
         confirm: 'Do you want to generate a form structure?'
         label: 'Input label'
-        machine_name: 'Input machine name'
+        machine-name: 'Input machine name'
         permission: 'Do you want to generate permissions?'
         type: 'New field type (press <return> to stop adding fields)'
         invalid: 'Field Type "%s" is invalid.'
@@ -34,8 +37,10 @@ questions:
             default-value: 'Default value'
             checkboxes: 'Default value(s) separated by commas'
         weight: 'Weight for input item'
-        title: 'Title'
-        fieldset: 'Fieldset'
+        title: Title
+        fieldset: Fieldset
+        new-field: 'Enter a new field properties'
+        machine_name: 'Input machine name'
 errors:
     module-dependency: 'Missing module dependency "%s" is not installed. Try module:install to install it.'
     class-name-empty: 'The Class name can not be empty'
@@ -50,3 +55,4 @@ messages:
     drupal-core: 'Drupal Core'
     move-phar: 'Accessing console from anywhere on your system'
     quick-start: 'Download, install and serve Drupal 8'
+    available-field-types: 'Available types: <comment>%s</comment>'
